@@ -218,7 +218,9 @@ public class WxCommArticleListController extends BaseCommonController{
 	 */
 	@RequestMapping("/queryRecommendArticleList")
 	@ResponseBody
-	public Map<String, Object> queryRecommendArticleList(String max_article_id, String page, String limit) { 
+	public Map<String, Object> queryRecommendArticleList(String city_id, String class_id, String max_article_id, String page, String limit) { 
+		LOG.info("city_id="+city_id);
+		LOG.info("class_id="+class_id);
 		LOG.info("max_article_id="+max_article_id);
 		LOG.info("page="+page);
 		LOG.info("limit="+limit);
